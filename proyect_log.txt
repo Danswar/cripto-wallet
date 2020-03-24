@@ -1,0 +1,85 @@
+24/03/2020 -------------------
+(CLIENT)
+- limpieza de warnings
+- mejoras en componentes auth
+- peticiones firmadas con token
+
+22/03/2020 -------------------
+(CLIENT)(SERVER)
+- implementada ruta para autenticar usuarios con id_token de google
+- refactor al modelo user para aceptar googleID y password no es obligatorio
+- terminada GoogleStrategy
+- terminada login con Facebook
+
+19/03/2020 -------------------
+(CLIENT)(SERVER)
+- revision de funcionalidad de autenticacion de usuario
+- error reducer implementado
+
+19/03/2020 -------------------
+(CLIENT)
+- limpieza de codigo duplicado en auth middleware
+- completado el flujo para registrar usuarios
+- cambiado HOC withCheckAuth por withRedirectAuthUsers
+- refactor de AuthComponents
+
+13/03/2020 -------------------
+(CLIENT)
+- implementado logout con redireccion para componentes dentro de <ProtectedRoute></ProtectedRoute>
+
+12/03/2020 -------------------
+(CLIENT)
+- componente HOC withCheckAuth completado, redirecciona a usuarios logeados y no logueados
+
+11/03/2020 -------------------
+(CLIENT)
+- agragado HOC para gestionar rutas protegidas, redirige a /signin si no estas logueado
+
+10/03/2020 -------------------
+(CLIENT)
+- agregado componente Dashboard para implementarlo luego como ruta segura
+- configuracion basica de rutas Boot, Signin, Dashboard y NoMatch
+
+09/03/2020 -------------------
+(CLIENT)
+- componentes signin con estilos de boostrap
+- revision de warning 
+- implementada funcionalidad para signin en la store
+
+08/03/2020 -------------------
+(SERVER)
+- refactor a la cofiguracion de passport
+- refactor a los middlewares
+- refactor de firma de tokens
+(CLIENT)
+- implementada funcionalidad para hacer Api Request (Redux middleware)
+- implementada funcionalidad para hacer log (Redux middleware)
+
+07/03/2020 -------------------
+(SERVER)
+- implementada la estrategia JWT. Importante: se debe incluir en el Request el header: 'Authoritation: JWT {token}'
+- implementada ruta '/profile' , es una ruta segura que devuelve el usuario identificado con el token enviado
+
+07/03/2020 -------------------
+(SERVER)
+- instalado passport para manejar autenticacion
+- configurada la estrategia local de autenticacion para passport
+- implementada la ruta para login de usuarios con email y contraseña
+- el signin y signup devuelven token jwt
+
+06/03/2020 -------------------
+(SERVER)
+- definido el modelo user
+- definida ruta para registro de usuarios por nombre-usuario/email/contraseña
+
+05/03/2020 -------------------
+(SERVER)
+- instalado y creado script para nodemon
+- habilitado los CORS
+- instalado el middleware bodyparser
+- configuracion de DB mongo y instalacion de mongoose
+
+04/03/2020 -------------------
+- inicio del log.
+- se separo el proyecto en dos: uno para el front y otro para el back
+- configuracion inicial de un servidor con express
